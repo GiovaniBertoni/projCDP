@@ -8,6 +8,7 @@ import Dashboard from './pages/Dashboard'
 import Produto from './pages/Produto'
 import Usuarios from './pages/Usuarios'
 import GerenciarUsuarios from './pages/Usuarios/Gerenciar'
+import Voluntarios from './pages/Voluntarios'
 
 export const Rotas = () => {
     return (
@@ -30,6 +31,10 @@ export const Rotas = () => {
                 />
 
                 <Route
+                    path='/voluntarios'
+                    element={<Voluntarios />}
+                />
+                <Route
                     path='/usuarios/:id'
                     element={<GerenciarUsuarios />}
                 />
@@ -38,8 +43,6 @@ export const Rotas = () => {
                     path='/produto/:id'
                     element={<Produto />}
                 />
-
-             
             </Routes>
         </BrowserRouter>
     )

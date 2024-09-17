@@ -16,3 +16,6 @@ export const verificaTokenExpirado = (
         return false
     }
 }
+export const excluiToken = () => {
+    localStorage.removeItem("americanos.token")
+}
